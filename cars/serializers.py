@@ -2,7 +2,7 @@ from rest_framework import serializers
 from cars.models import Brand, Car
 
 
-class BrandModelSerializer(serializers,BrandModelSerializer): # type: ignore
+class BrandModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Brand
         fields = '__all__'
